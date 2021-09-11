@@ -4,7 +4,7 @@ describe('Liskov substitution principle', () => {
   
   it('should methods works for derived type', () => {
     const rectangle = new Rectangle(3, 2)
-    const square = new Square(2, 2)
+    const square = new Square(2)
     
     rectangle.width = 4
     square.width = 4

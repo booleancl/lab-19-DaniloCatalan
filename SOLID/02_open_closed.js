@@ -27,7 +27,9 @@ class CoderFilter {
     return coders.filter(coder => coder.hobby === hobby)
   }
 
-  // filterByProp(){}
+  filterByProp(coders,prop, value) {
+    return coders.filter(coder => coder[prop] === value )
+  }
 }
 
 module.exports = {

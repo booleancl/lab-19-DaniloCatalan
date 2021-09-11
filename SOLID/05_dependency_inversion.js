@@ -12,7 +12,7 @@ class PayPalService {
 class PurchaseHandler {
   processPayment(paymentDetails, amount) {
 
-    const paymentSuccess = PayPalService.requestPayment(paymentDetails, amount)
+    const paymentSuccess = PaymentHandler.requestPayment(paymentDetails, amount)
 
     if (paymentSuccess) {
       // Do something
@@ -25,7 +25,9 @@ class PurchaseHandler {
 }
 
 class PaymentHandler {
-  static requestPayment() {}
+  static requestPayment(paymentDetails, amount) {
+    //return PayPalService.requestPayment(paymentDetails, amount)
+  }
 }
 
 module.exports = {

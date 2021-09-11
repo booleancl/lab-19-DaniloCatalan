@@ -1,9 +1,9 @@
-const { IPhone, Nokia3310 } = require('./04_interface_segregation')
+const { IPhone, Nokia3310, SmartPhone } = require('./04_interface_segregation')
 
 describe('Interface segregation principle', () => {
   
   it('should does not use methods that not be used', () => {
-    const smartPhone = new IPhone()
+    const smartPhone = new SmartPhone()
     const oldPhone = new Nokia3310()
 
     expect(oldPhone.phoneCall).toBeDefined()
