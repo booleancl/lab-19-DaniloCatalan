@@ -21,6 +21,16 @@ class TodoList {
     return this.items.toString()
   }
 
+  // save(filename) {
+  //   fs.writeFileSync(filename, this.toString())
+  // }
+
+  // load(filename) {
+  //   // Some implementation
+  // }
+}
+
+class TodoListService {
   save(filename) {
     fs.writeFileSync(filename, this.toString())
   }
@@ -29,8 +39,6 @@ class TodoList {
     // Some implementation
   }
 }
-
-class TodoListService {}
 
 module.exports = {
   TodoList,

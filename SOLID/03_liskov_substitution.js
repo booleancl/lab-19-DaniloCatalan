@@ -32,6 +32,16 @@ class Square extends Rectangle {
   constructor(size) {
     super(size, size)
   }
+
+  set width(value) {
+    this._width = value
+    this._height = value
+  }
+
+  set height(value) {
+    this._height = value
+    this._width = value
+  }
 }
 
 module.exports = {
