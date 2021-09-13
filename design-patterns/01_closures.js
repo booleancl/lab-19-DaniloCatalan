@@ -18,6 +18,11 @@ function counterHandler(initValue) {
     console.log(`currentValue = ${currentValue}`)
     return currentValue
   }
+
+  return{
+    increment,
+    decrement
+  }
 }
 
 module.exports = {

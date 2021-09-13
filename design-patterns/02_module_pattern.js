@@ -28,14 +28,16 @@ const AppModule = () => {
       carouselInfoDescription.text(description)
     },
   
-    init() {
+    initialize() {
       this.carouselWrapper.on('slid.bs.carousel', () => this.setActiveName())
   
       this.setActiveName()
     }
   }
 
-  return app
+  return {
+    initialize: app.initialize
+  }
 }
 
 module.exports = AppModule
